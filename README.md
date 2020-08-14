@@ -24,10 +24,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What problem does the context API help solve?
+
+context API solves the problem of prop drilling allowing you to share data to children that are not direct decendents of the component
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+actions send data from your app to your store to process the data
+reducers hold your state, and an action and then returns the next state based on those action payloads
+the store holds your state tree, with the only means of changing the state that it holds is by dispatching actions
+
 3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+application state is global state, while component state is local to that component unless you pass it as props
+
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+redux thunk allows you to return a function and also allows you to delay a function allowing you to run async operations in your action creators
+
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+My favorite state management system, is probably context API just because its a lot less code to write but Redux is not too hard to wrap your head around once you start using it
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
