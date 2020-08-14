@@ -16,7 +16,7 @@ const Smurfs = (props) => {
                     <h1>Smurf Village Members</h1>
                     {props.smurfs.map(smurf => (
                         <div key={smurf.id}>
-                        <h2>Name:{smurf.name}</h2>
+                        <h2 data-testid='testName'>Name:{smurf.name}</h2>
                         <p>Age:{smurf.age}</p>
                         <p>Height:{smurf.height}</p>
                         </div>

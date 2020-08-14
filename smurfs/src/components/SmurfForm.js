@@ -71,7 +71,7 @@ const SmurfForm = () => {
                 />
             </label>
             <div>
-                <button>Submit Smurf</button>
+                <button type='submit'>Submit Smurf</button>
             </div>
         </form>
     )
