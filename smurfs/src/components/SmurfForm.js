@@ -20,7 +20,7 @@ const SmurfForm = () => {
         .then(res => {
             console.log('this is the post',res)
         })
-        .catch(err => console.log(err))
+        .catch(err => console.log('smurf error here',err))
     }
 
 
@@ -38,12 +38,13 @@ const SmurfForm = () => {
             age: formValues.age.trim(),
             height: formValues.height.trim(),
         }
+        console.log('this is new smurf',newSmurf)
         postSmurf(newSmurf)
         setFormValues(initialFormValues)
     }
 
     return (
-        <div className="form-container" onSubmit={onSubmit}>
+        <form className="form-container" onSubmit={onSubmit}>
             <label>Name:
                 <input 
                 type='text'
@@ -72,7 +73,7 @@ const SmurfForm = () => {
             <div>
                 <button>Submit Smurf</button>
             </div>
-        </div>
+        </form>
     )
 }
 export default SmurfForm

@@ -13,11 +13,12 @@ const Smurfs = (props) => {
             {props.error ? <h4>There was an error: {props.error}</h4> : null}
             {props.smurfs.length > 0 ? (
                 <div>
+                    <h1>Smurf Village Members</h1>
                     {props.smurfs.map(smurf => (
                         <div key={smurf.id}>
-                        <h2>{smurf.name}</h2>
-                        <p>{smurf.age}</p>
-                        <p>{smurf.height}</p>
+                        <h2>Name:{smurf.name}</h2>
+                        <p>Age:{smurf.age}</p>
+                        <p>Height:{smurf.height}</p>
                         </div>
                     ))}
                 </div>
